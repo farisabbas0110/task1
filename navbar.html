@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<!-- logo section -->
+    <div class="bg-gray-700 shadow-2xl text-white antialiased">
+        <div class="container max-w-screen-xl mx-auto flex items-center justify-between">
+          <div class="logo">
+            <h1 class="uppercase text-xl font-semibold">Logobakery</h1>
+          </div>
+
+          <!-- hamburger menu -->
+          <div class="relative flex items-center justify-around p-4 bg-gray-700 w-full text-white">
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+            <label for="menu-toggle" class="block cursor-pointer mx-auto my-auto md:hidden">
+                <div class="w-6 h-0.5 bg-white mb-1"></div>
+                <div class="w-6 h-0.5 bg-white mb-1"></div>
+                <div class="w-6 h-0.5 bg-white mb-1"></div>
+            </label>
+
+             <!-- navbar items -->
+            <nav class="hidden peer-checked:block absolute top-full left-0 w-full mx-auto bg-gray-700 md:static md:w-fit md:flex md:space-x-6">
+            <ul class="flex flex-col p-4 md:flex-row md:space-x-6">
+              <li>Services</li>
+              <li>Projects</li>
+              <li>About</li>
+            </ul>
+
+            <!-- contact button -->
+        </nav>
+          <div class="bg-blue-500 px-10 py-2 rounded-full">Contact</div>
+        </div>
+      </div>
+</body>
+</html>
